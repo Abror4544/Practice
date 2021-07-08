@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <title>App</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="block">
+            <div class="square a"></div>
+            <div class="square b"></div>
+            <div class="square c"></div>
+            <div class="square d"></div>
+        </div>
+        <div class="formWrap">
+            <div class="circle">
+                <p>Нажать</p>
+            </div>
+            <form>
+                <select id="mark" required>
+                    <option value="a" selected="selected">Выбрать марку</option>
+                </select>
+                <select id="model" required>
+                    <option value="a" selected="selected">Выбрать модель</option>
+                </select>
+                <select id="year" required>
+                    <option value="a" selected="selected">Выбрать год</option>
+                </select>
+                <!--  <button id="datepicker" type="button">Доставить</button> -->
+                <input type="button" id="datepicker" value="Доставить">
+            </form>
+            <div class="thank"></div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="data.json"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
