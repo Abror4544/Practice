@@ -141,19 +141,6 @@ $(document).ready(function () {
     });
   });
 
- /*  $('#datepicker').datepicker(
-    {
-    },
-    function () {
-      $("form").hide();
-      $(".thank").append(`Вы выбрали ${$("#mark option:selected").text()} ${("#model option:selected").text()} ${("#year option:selected").text()}, доставка    `)
-    }
-  );
-  $("#datepicker").on("change",function(){
-    let selected = $(this).val();
-    alert(selected);
-  }); */
-
   $.datepicker.regional['ru'] = {
     closeText: 'Закрыть',
     prevText: 'Предыдущий',
@@ -177,16 +164,14 @@ $(document).ready(function () {
     opens: "left",
     minDate: "01.05.2021",
     maxDate: "21.03.2022"
-	});
-   
-    
+	}); 
   
   $("#datepicker").on("change",function(){
     var selected = $(this).val();
     $("form").hide(500);
     $(".thank").show(500);
-    $(".thank").append(`Вы выбрали ${$("#mark option:selected").text()} ${$("#model option:selected").text()} ${$("#year option:selected").text()}, доставка ${selected}, <a href="#/" onclick="location.reload();">начать заново</a>`)
-    
+    $(".thank").append(`Вы выбрали ${$("#mark option:selected").text()} ${$("#model option:selected").text()} ${$("#year option:selected").text()}, доставка ${selected}, <a href="#/" onclick="tap()">начать заново</a>`)    
   });
+
 
 });
